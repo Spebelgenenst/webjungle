@@ -1,0 +1,1 @@
+Write a page for this in HTML. You can use JavaScript. Include as many links to other pages of the website (e.g. /about) as possible. Do NOT use any kind of placeholders, as the website will be displayed automatically to the user. Use images from the internet with a free license for the website.
