@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERROR</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #000000;
+            color: #ff5555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .error-container {
+            background-color: #000000;
+            border: 1px solid #ff5555;
+            padding: 2rem;
+            width: 100%;
+            max-width: 600px;
+            box-sizing: border-box;
+            text-align: left;
+        }
+
+        h1 {
+            color: #ff5555;
+            margin-top: 0;
+            font-size: 1.5rem;
+            border-bottom: 1px solid #ff5555;
+            padding-bottom: 0.5rem;
+        }
+
+        .error-message {
+            color: #ffffff;
+            font-size: 1rem;
+            margin: 0.5rem 0;
+            white-space: pre-line;
+        }
+
+        .error-details {
+            color: #aaaaaa;
+            font-size: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .reload-link {
+            display: block;
+            margin-top: 1.5rem;
+            text-align: center;
+            color: #ff5555;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .reload-link:hover {
+            text-decoration: underline;
+        }
+
+        a {
+            color: #ff5555;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1>ERROR: {{ code }}</h1>
+        <div class="error-message">
+{{ status }}
+        </div>
+        <div class="error-details">
+            <strong>TECHNICAL DETAILS:</strong><br>
+            {{ message }}
+            <br>
+        </div>
+        <a href="javascript:location.reload();" class="reload-link">
+            [RELOAD SITE]
+        </a>
+    </div>
+</body>
+</html>
